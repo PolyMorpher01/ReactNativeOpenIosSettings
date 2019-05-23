@@ -9,5 +9,9 @@
 }
 RCT_EXPORT_MODULE()
 
+RCT_EXPORT_METHOD(open){
+    [[UIApplication sharedApplication] openURL:[NSURLURLWithString:UIApplicationOpenSettingsURLString]];
+}
+
 @end
   
